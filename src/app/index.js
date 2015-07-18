@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('church', ['ngAnimate', 'ngSanitize', 'ngResource', 'ui.router'])
+angular.module('church', ['ngAnimate', 'ngSanitize', 'ngResource', 'ui.router','ui.bootstrap'])
   .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
       .state('home', {
