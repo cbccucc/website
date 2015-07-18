@@ -2,7 +2,7 @@
 
 angular.module('church')
   .controller('MainCtrl', function ($scope) {
-    $scope.myInterval = 1000;
+    $scope.myInterval = 2000;
     $scope.slides = [
       {
         image: 'assets/images/churchfront.jpg'

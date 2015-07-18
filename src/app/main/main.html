@@ -2,6 +2,7 @@
   <header>
     <h1>Cocoa Beach Community Church</h1>
   </header>
+  <div class="carouselcontainer">
   <carousel interval="myInterval">
     <slide ng-repeat="slide in slides" active="slide.active">
       <img ng-src="{{slide.image}}">
@@ -10,9 +11,22 @@
       </div>
     </slide>
   </carousel>
-  <div class="starthere"><p>Start Here</p></div>
-  <p>some text</p>
-  <div class="footer">
-  </div>
+    <div class="starthere" data-ng-click="reveal.show = !reveal.show"><p>Start Here</p></div>
+  </div><!--carouselcontainer-->
+  <section class="contentreveal ng-hide" data-ng-show="reveal.show">
+    <p>some text</p>
+    <p>some text</p>
+    <p>some text</p>
+    <p>some text</p>
+    <p>some text</p>
+    <p>some text</p>
+    <p>some text</p>
+  </section>
+
+  <footer>
+    <p>some footer content</p>
+    <p>some footer content</p>
+    <p>some footer content</p>
+  </footer>
 
 </div>

@@ -6,7 +6,7 @@
     left: 5%;
     z-index: 10;
     color: white;
-    background-color: gray;
+    background-color: darkslategray;
     padding: 1vw;
     border-radius: 0 0 1vw 1vw;
     h1 {
@@ -29,8 +29,56 @@
   border: none;
 }
 .carousel-indicators {
-  bottom: 100px;
+  bottom: 5vw;
 }
+.carouselcontainer {
+  position: relative;
+}
+.starthere{
+  width: 20vw;
+  display: block;
+  background-color: orange;
+  padding: 1vw;
+  border-radius: 35px;
+  border: 5px solid lightsalmon;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 10;
+  bottom: -2.5vw;
+  text-align: center;
+  p {
+    margin: 0;
+    padding: 0;
+    font-size: 3vw;
+    color: white;
+  }
+}
+.contentreveal {
+  background: blue;
+  transition: 0.5s linear all;
+  overflow: hidden;
+  max-height: 1000px;
+}
+.ng-hide-add, .ng-hide-remove {
+  display: block !important;
+}
+.contentreveal.ng-hide {
+  max-height: 0;
+}
+
+
+footer {
+  border-top: 3px solid lightgray;
+  background-color: darkslategray;
+  color: white;
+}
+
+
+
+
 /*full width container*/
 @media (max-width: 767px) {
   .block {
@@ -38,10 +86,5 @@
     margin-right: -20px;
   }
 }
-
-
-
-
-
 // injector
 // endinjector
