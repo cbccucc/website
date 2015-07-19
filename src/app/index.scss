@@ -3,16 +3,64 @@
   header{
     position: absolute;
     top: 0;
-    left: 5%;
+    left: 5vw;
     z-index: 10;
+    width: 22em;
     color: white;
     background-color: darkslategray;
-    padding: 1vw;
+    padding: 1em 0 1em 0;
+    text-align: center;
     border-radius: 0 0 1vw 1vw;
+    @media (max-width: 937px) {
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media (min-width: 938px) {
+      padding-top: 2em;
+      padding-bottom: 2em;
+      font-size: 1.2em;
+    }
     h1 {
       margin: 0;
       padding: 0;
-      font-size: 2vw;
+      font-size: 1.2em;
+    }
+  }
+  nav {
+    position: absolute;
+    top: 2em;
+    right: 5em;
+    width: 32em;
+    background-color: darkslategray;
+    z-index: 10;
+    text-align: center;
+    border-radius: 25px;
+    padding: 0.5em 0 0.5em 0;
+    @media (max-width: 937px) {
+      top: 5em;
+      font-size: 0.7em;
+      left: 0;
+      right: 0;
+      width: 32em;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    a:first-child {
+      border-right: 1px solid white;
+      padding-right: 1em;
+      padding-left: 0 !important;
+    }
+    a {
+      padding-left: 1em;
+      color: white;
+      text-decoration: none;
+    }
+    a:hover{
+      color: orange;
+    }
+    a:last-child {
     }
   }
 }
@@ -30,15 +78,19 @@
 }
 .carousel-indicators {
   bottom: 5vw;
+  @media (max-width: 937px) {
+    display: none;
+  }
 }
 .carouselcontainer {
   position: relative;
 }
 .starthere{
-  width: 20vw;
+  cursor: pointer;
+  width: 12em;
   display: block;
   background-color: orange;
-  padding: 1vw;
+  padding: 1em;
   border-radius: 35px;
   border: 5px solid lightsalmon;
   position: absolute;
@@ -47,13 +99,20 @@
   margin-left: auto;
   margin-right: auto;
   z-index: 10;
-  bottom: -2.5vw;
+  bottom: -2em;
   text-align: center;
+  @media(min-width: 937px){
+    width: 17em;
+    bottom: -3em;
+  }
   p {
     margin: 0;
     padding: 0;
-    font-size: 3vw;
+    font-size: 2em;
     color: white;
+    @media(min-width: 937px){
+      font-size: 3em;
+    }
   }
 }
 .contentreveal {
