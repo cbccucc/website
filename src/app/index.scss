@@ -116,16 +116,49 @@
   }
 }
 .contentreveal {
-  background: blue;
   transition: 0.5s linear all;
   overflow: hidden;
-  max-height: 1000px;
+  max-height: 1500px;
+  padding-top: 5em;
+  padding-bottom: 5em;
 }
 .ng-hide-add, .ng-hide-remove {
   display: block !important;
 }
 .contentreveal.ng-hide {
   max-height: 0;
+}
+.linkcontainer {
+  background-color: orange;
+  padding: 1em;
+}
+.iconcontainer {
+  color: white;
+  display: inline-block;
+  padding-left: 1em;
+  padding-right: 1em;
+  border-right: 1px solid white;
+  width: 6em;
+  text-align: center;
+}
+.linktiletext {
+  color: white;
+  display: inline-block;
+  padding-left: 2em;
+  .linkname {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  .linksubtitle {
+    font-size:1.25em;
+  }
+
+}
+.description {
+  margin-top: 1em;
+}
+.tilerow {
+  margin-top: 2em;
 }
 
 
