@@ -7,7 +7,8 @@ angular.module('church', ['ngAnimate', 'ngSanitize', 'ngResource', 'ui.router','
         url: '/',
         templateUrl: 'app/main/main.html',
         controller: 'MainCtrl'
-      });
+      })
+	  ;//end of routes
 
     $urlRouterProvider.otherwise('/');
   })
