@@ -97,7 +97,7 @@ body {
   background-color: orange;
   padding: 1em;
   border-radius: 35px;
-  border: 5px solid lightsalmon;
+  border: 5px solid #F0B072;
   position: absolute;
   left: 0;
   right: 0;
@@ -174,6 +174,26 @@ footer {
   padding-top: 3em;
 }
 .otherpages {
+		.pagescontent {
+			padding-top: 9em;	
+		}
+		.topimage {
+			background: url('../assets/images/frontofchurch.jpg') center;
+			background-size: cover;
+			width: 100%;
+			height: 35vh;	
+			border-top: 10px solid #F17830;
+			border-bottom: 10px solid #F17830;
+		}
+		.lefttext {
+			padding-top: 3em;	
+		}
+		.rightlinks {
+				padding-top: 6em;
+			h3 {
+				border-bottom: 1px solid black;	
+			}	
+		}
 }
 
 
