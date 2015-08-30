@@ -28,10 +28,10 @@ angular.module("church", ["ngAnimate", "ngSanitize", "ngResource", "ui.router","
         templateUrl: "app/ministries/ministries.html",
         controller: "MinistriesCtrl"
       })
-      .state("opportunities", {
-        url: "/opportunities",
-        templateUrl: "app/opportunities/opportunities.html",
-        controller: "OpportunitiesCtrl"
+      .state("events", {
+        url: "/events",
+        templateUrl: "app/events/events.html",
+        controller: "EventsCtrl"
       })
       .state("plan", {
         url: "/plan",
@@ -47,6 +47,16 @@ angular.module("church", ["ngAnimate", "ngSanitize", "ngResource", "ui.router","
         url: "/thriftshop",
         templateUrl: "app/thriftshop/thriftshop.html",
         controller: "ThriftshopCtrl"
+      })
+      .state("wfellowship", {
+        url: "/womensfellowship",
+        templateUrl: "app/womensfellowship/womensfellowship.html",
+        controller: "WomensfellowshipCtrl"
+      })
+      .state("photos", {
+        url: "/photogallery",
+        templateUrl: "app/photos/photos.html",
+        controller: "PhotosCtrl"
       })
 	  ;//end of routes
     $urlRouterProvider.otherwise("/");

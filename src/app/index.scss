@@ -1,7 +1,6 @@
 body {
 	background-color: #F7F7F0;
 }
-
 #container{
   position:relative;
   header{
@@ -11,10 +10,16 @@ body {
     z-index: 10;
     width: 22em;
     color: white;
-    background-color: darkslategray;
+    background-color: rgba(47, 79, 79, 0.7);
     padding: 1em 0 1em 0;
     text-align: center;
     border-radius: 0 0 1vw 1vw;
+	@media (max-width: 500px) {
+		width: 100%;
+		position: relative;
+		border-radius: 0;
+    	background-color: rgba(47, 79, 79, 1);
+	}
     @media (max-width: 937px) {
       left: 0;
       right: 0;
@@ -31,13 +36,17 @@ body {
       padding: 0;
       font-size: 1.2em;
     }
+	a {
+		color: white;
+		cursor: pointer;
+	}
   }
   nav {
     position: absolute;
     top: 2em;
     right: 5em;
     width: 32em;
-    background-color: darkslategray;
+    background-color: rgba(47, 79, 79, 0.7);
     z-index: 10;
     text-align: center;
     border-radius: 25px;
@@ -66,11 +75,19 @@ body {
     }
     a:last-child {
     }
+	.wtimes {
+		position: absolute;
+		top: 3em;
+		left: 0;
+		right:0;
+		color: white;
+		text-shadow: 2px 0px darkslategray;
+	}
   }
 }
 .carousel .item {
   width: 100%; /*slider width*/
-  max-height: 600px; /*slider height*/
+  max-height: 70vh; /*slider height*/
 }
 .carousel .item img {
   width: 100%; /*img width*/
@@ -168,10 +185,21 @@ body {
 
 
 footer {
+	overflow: hidden;
   border-top: 3px solid lightgray;
+  border-bottom: 6px solid #FFA600;
   background-color: darkslategray;
   color: white;
-  padding-top: 3em;
+  padding-top: 5em;
+  padding-bottom:2em;
+  p:first-child {
+	text-align: center;	
+	padding-left: 2em;
+	padding-right: 2em;
+	}
+	.linksandlogo{
+		margin-top: 2em;
+	}
 }
 .otherpages {
 		.pagescontent {
@@ -195,9 +223,6 @@ footer {
 			}	
 		}
 }
-
-
-
 /*full width container*/
 @media (max-width: 767px) {
   .block {
