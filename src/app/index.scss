@@ -140,7 +140,7 @@ body {
 .contentreveal {
   transition: 0.5s linear all;
   overflow: hidden;
-  max-height: 1500px;
+  max-height: 2000px;
   padding-top: 5em;
   padding-bottom: 5em;
 }
@@ -192,6 +192,17 @@ footer {
   color: white;
   padding-top: 5em;
   padding-bottom:2em;
+  .footlinkcontainer{
+		  a	{
+			color: white;
+		}
+		span {
+			display: block;
+		}
+		span:last-child {
+			margin-bottom: 2em;
+		}
+	}
   p:first-child {
 	text-align: center;	
 	padding-left: 2em;
