@@ -241,7 +241,18 @@ footer {
 			border-bottom: 10px solid #F17830;
 		}
 		.lefttext {
-			padding-top: 3em;
+			h2{
+				margin-top:1em;
+			}
+			h3{
+				margin-top: 3em;	
+			}
+			h4{
+				margin-top:1em;	
+			}
+			h5 {
+				margin-top:1em;
+			}
 			@media(max-width: 500px){
 				padding-left: 2em;	
 			}	
