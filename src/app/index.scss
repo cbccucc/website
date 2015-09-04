@@ -19,6 +19,7 @@ body {
 		position: relative;
 		border-radius: 0;
     	background-color: rgba(47, 79, 79, 1);
+    	padding: 1.5em 0 1.5em 0;
 	}
     @media (max-width: 937px) {
       left: 0;
@@ -60,6 +61,9 @@ body {
       margin-left: auto;
       margin-right: auto;
     }
+	@media (max-width: 500px) {
+		top: 7em;
+	}
     a:first-child {
       border-right: 1px solid white;
       padding-right: 1em;
@@ -224,6 +228,7 @@ footer {
 	}
 }
 .otherpages {
+		overflow: hidden;
 		.pagescontent {
 			padding-top: 9em;	
 		}
@@ -236,10 +241,18 @@ footer {
 			border-bottom: 10px solid #F17830;
 		}
 		.lefttext {
-			padding-top: 3em;	
+			padding-top: 3em;
+			@media(max-width: 500px){
+				padding-left: 2em;	
+			}	
 		}
 		.rightlinks {
 				padding-top: 6em;
+			a {
+				margin-top:0.5em;
+				display: block;
+				cursor: pointer;
+			}
 			h3 {
 				border-bottom: 1px solid black;	
 			}	
