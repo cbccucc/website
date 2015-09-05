@@ -16,12 +16,12 @@
 		<div class='row'>
 			<section class='lefttext col-md-6 col-md-offset-1'>
 				<h2>MINISTRIES</h2>
-				<h3>Worship</h3>
+				<h3 id='worship'>Worship</h3>
 				<p>Sundays @ 10:00 AM.</p>
 				<p>Minister: Rev. Dr. Bill Tyson</p>
 				<p>Choir Director: Mrs. Janet Johns</p>
 				<p>Organist: Mr. David Wrable</p>
-				<h3>Education</h3>
+				<h3 id='education'>Education</h3>
 				<p>Coleman Todd: Associate for Church Growth, Social Justice and Education</p>
 				<h3 id='adultbible'>Adult Bible Discussion</h3>		
 				<h4>Sundays at 9:00am and Tuesdays at 2:00pm</h4>
@@ -37,10 +37,10 @@
 				CENTER FOR SPIRITUAL ENRICHMENT
 				</h3>
 				<h4>
-				Thursdays 12 Noon to 2:00 PM
+				Thursdays 12:00 PM to 2:00 PM
 				</h4>
 				<h4>
-				12NOON: LUNCH $3.00 / 12:30PM –2:00PM: PROGRAM 
+				12:00 PM LUNCH $3.00 / 12:30 PM – 2:00 PM PROGRAM 
 				</h4>
 				<h4>
 				Facilitated by Cindy Johnson and Coleman Todd
@@ -156,13 +156,15 @@
 			</section><!--lefttext-->
 			<section class='rightlinks col-md-2 col-md-offset-1 hidden-xs'>
 					<h3>MINISTRIES</h3>
+					<a ng-click="scrollTo('worship')">Worship</a>
+					<a ng-click="scrollTo('education')">Education</a>
 					<a ng-click="scrollTo('adultbible')">Adult Bible Discussion</a>
 					<a ng-click="scrollTo('childrenand')">Children and Youth Programs</a>
 					<a ng-click="scrollTo('centerfor')">Center For Spiritual Enrichment</a>
 					<a ng-click="scrollTo('mission')">Missions</a>
 					<a ng-click="scrollTo('local')">Local Missions</a>
 					<a ng-click="scrollTo('hungerknows')">Food Collection</a>
-					<a ng-click="scrollTo('underoaks')">2nd Saturday Suppers</a>
+					<a ng-click="scrollTo('underoaks')">Second Saturday Suppers</a>
 					<a ng-click="scrollTo('cocoabeach')">Cocoa Beach Community Meal</a>
 					<a ng-click="scrollTo('statenational')">State, National and Global Missions</a>
 					<a ng-click="scrollTo('pastoralcare')">Pastoral Care</a>
