@@ -1,6 +1,6 @@
 <div id="container" class='otherpages'>
   <header>
-    <h1>Cocoa Beach Community Church</h1>
+  <a ui-sref='home'><h1>Cocoa Beach Community Church</h1></a>
   </header>
   <nav>
     <a href ="https://www.facebook.com/CBCC.UCC" target="_blank"><i class="fa fa-facebook-official"></i></a>
@@ -15,7 +15,7 @@
 		</div>
 		<div class='row'>
 			<section class='lefttext col-md-6 col-md-offset-1'>
-				<h2>WHO WE ARE</h2>
+				<h2 id="whowe">WHO WE ARE</h2>
 				<h4>Our faith is 2,000 years old. Our thinking is not.</h4>
 				<p>We believe in God's continuing testament.  This is why we are committed to hearing God's ancient story anew and afresh in our lives and in the world today.  We try to remain attentive to God's creative movement in the world. Religion and science are not mutually exclusive, and your head and heart are both welcomed into our places of worship.  We prepare our members and leaders to be engaged in ministry in the present and future church, and we embrace all kinds of communities and new modes of thinking.  Why? Because God is still speaking,</p>
 				<h4>No matter who you are or where you are on life's journey, you are welcome here.</h4>
@@ -25,7 +25,7 @@
 				<p>
 We believe the church's mission is to change lives — individually, systemically and globally.  We work to make transformation possible, but trust in God's grace.  This is why we insist that churches must be places of vitality in worship, learning and advocacy. We are committed to working for justice, and we believe that lives are changed through global experiences and friendships.  Why? Because God is still speaking,
 </p>
-<h4>WHAT WE BELIEVE</h4>
+<h4 id='whatwe'>WHAT WE BELIEVE</h4>
 <p>We believe in the triune God: Creator, resurrected Christ, the sole Head of the church, and the Holy Spirit, who guides and brings about the creative and redemptive work of God in the world.</p>
 <p>We believe that each person is unique and valuable. It is the will of God that every person belong to a family of faith where they have a strong sense of being valued and loved.
 </p>
@@ -50,11 +50,12 @@ We believe the church's mission is to change lives — individually, systemicall
 			</section><!--lefttext-->
 			<section class='rightlinks col-md-2 col-md-offset-1'>
 					<h3>ABOUT</h3>
-					<p>Placeholder</p>
-					<p>Placeholder</p>
-					<p>Placeholder</p>
-					<p>Placeholder</p>
-					<p>Placeholder</p>
+					<a ng-click="scrollTo('whowe')">Who we are</a>
+					<a ng-click="scrollTo('whatwe')">What we believe</a>
+					<p class='externallinks'>External links:</p>
+					<a href='http://www.ucc.org/about-us_ucc-firsts'>UCC Firsts</a>
+					<a href='http://www.ucc.org/'>UCC National Website</a>
+					<a href='http://www.ucc.org/god-is-still-speaking/'>God is still speaking</a>
 			</section><!--rightlinks-->
 		</div>
   </section>

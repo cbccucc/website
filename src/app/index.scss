@@ -1,3 +1,6 @@
+h1, h2, h3, h4, h5, h6, p, a, span{
+	font-family: 'Roboto', sans-serif;
+}
 body {
 	background-color: #F7F7F0;
 }
@@ -210,6 +213,7 @@ footer {
  	.statement {
 		text-align: center;	
 		margin-bottom: 2em;
+		font-size:1.5em;
 	}
 	.linksandlogo{
 		margin-top: 2em;
@@ -229,6 +233,9 @@ footer {
 }
 .otherpages {
 		overflow: hidden;
+		.externallinks{
+			margin-top: 2em;		
+		}
 		.pagescontent {
 			padding-top: 9em;	
 		}
@@ -280,6 +287,15 @@ footer {
 				border-bottom: 1px solid black;	
 			}	
 		}
+}
+.bottomimages{
+		div{
+			padding:0;
+			overflow: hidden;	
+		}
+	img {
+		width: 100%;
+	}
 }
 /*full width container*/
 @media (max-width: 767px) {
