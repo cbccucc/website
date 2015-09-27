@@ -20,13 +20,13 @@
       </div>
     </slide>
   </carousel>
-    <div class="starthere" data-ng-click="reveal.show = !reveal.show"><p>Start Here</p></div>
+    <div class="starthere" data-ng-click="reveal.show = !reveal.show; scrollTo('plan')"><p>Start Here</p></div>
   </div><!--carouselcontainer-->
   <section class="contentreveal ng-hide" data-ng-show="reveal.show">
     <div class="row tilerow"><!--TILE ROW START-->
       <div class="linkanddesccontainer col-md-4 col-md-offset-1">
     <div class="linkcontainer "><!--SINGLE TILE IN ROW-->
-      <a ui-sref="plan" class="linktile">
+      <a ui-sref="plan" class="linktile" id='plan'>
         <div class="row">
           <div class="iconcontainer">
             <i class="fa fa-calendar fa-4x"></i>
@@ -148,7 +148,7 @@
       </div><!--linkanddescontainer-->
 
       <div class="linkanddesccontainer col-md-4 col-md-offset-2">
-        <div class="linkcontainer "><!--SINGLE TILE IN ROW-->
+        <div class="linkcontainer wfellowship"><!--SINGLE TILE IN ROW-->
           <a ui-sref="wfellowship" class="linktile">
             <div class="row">
               <div class="iconcontainer">

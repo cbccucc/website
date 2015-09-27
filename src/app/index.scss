@@ -158,8 +158,11 @@ body {
   max-height: 0;
 }
 .linkcontainer {
-  background-color: orange;
+  background-color: #F5A500;
   padding: 1em;
+}
+.linkcontainer .wfellowship{
+	background: url('../assets/images/wfellowshipbutton.jpg') !important;
 }
 .iconcontainer {
   color: white;

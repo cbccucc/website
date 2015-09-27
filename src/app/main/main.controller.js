@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('church')
-  .controller('MainCtrl', function ($scope) {
+  .controller('MainCtrl', function ($scope, $location, $anchorScroll) {
     $scope.myInterval = 3500;
     $scope.slides = [
       {
@@ -17,4 +17,9 @@ angular.module('church')
         image: 'assets/images/alterglass.jpg'
       }
     ];
+	$scope.scrollTo = function(id) {
+		setTimeout(function(){
+		window.scrollTo(0, 500);
+		}, 250)
+	};
   });
