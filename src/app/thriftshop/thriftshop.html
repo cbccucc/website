@@ -33,6 +33,12 @@
 				to raise funds so that our church can serve the world with our outreach projects
 				</li>
 				</ol>
+				<h3 id='updates'>Updates and New Posts</h3>
+				<div data-ng-repeat='post in thriftshop.posts'>
+						<p data-ng-bind='post.title'></p>	
+						<p data-ng-bind='post.body'></p>
+						<a ng-href='{{post.post_url}}' target='_blank'>View this post on our tumblr page</a>
+				</div>
 				<h3 id='distribute'>
 				We also distribute our donated items in the event that we can't use them or that another group needs them more.  Here are some of our neighbors that receive donations from us:
 				</h3>
@@ -94,6 +100,7 @@
 			<section class='rightlinks col-md-2 col-md-offset-1'>
 					<h3>Thrift Shop</h3>
 					<a ng-click="scrollTo('purpose')">Purpose</a>
+					<a ng-click="scrollTo('updates')">Updates / New Posts</a>
 					<a ng-click="scrollTo('distribute')">Item Distribution</a>
 			</section><!--rightlinks-->
 		</div>

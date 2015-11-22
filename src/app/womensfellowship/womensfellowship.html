@@ -28,7 +28,7 @@
 				Fellowship – Christian women gathering together to socialize and bond.
 				</p>	
 				<p>
-				Service & Giving – We serve the church and the community with our time, talents and treasure.
+				Service &amp; Giving – We serve the church and the community with our time, talents and treasure.
 				</p>
 				<p>
 				Fundraising – We participate in fundraising efforts to support our projects.
@@ -45,6 +45,12 @@
 				<p>
 				Annual Card Party – Each February we host a card party that is both a fundraiser and a fun social event.  This event is eagerly anticipated each year by women all across our community.  Although the card games, favors and raffle prizes are a big draw, the most popular offering is the secret recipe chicken salad that is only available once a year at our card party!
 				</p>
+				<h3 id='updates'>Updates and Recent Posts</h3>
+				<div data-ng-repeat='post in womensfellowship.posts'>
+						<p data-ng-bind='post.title'></p>	
+						<p data-ng-bind='post.body'></p>
+						<a ng-href='{{post.post_url}}' target='_blank'>View this post on our tumblr page</a>
+				</div>
 				<h3 id='communitygiving'>Community Giving – Some of the community organizations that we contribute to include:</h3>
 				<p>
 				Brevard Sharing Center
@@ -76,6 +82,7 @@
 					<a ng-click="scrollTo('whowe')">Who we are</a>
 					<a ng-click="scrollTo('ouractivities')">Our activities</a>
 					<a ng-click="scrollTo('projects')">Our projects</a>
+					<a ng-click="scrollTo('updates')">Updates / Recent Posts</a>
 					<a ng-click="scrollTo('communitygiving')">Community Giving</a>
 			</section><!--rightlinks-->
 		</div>
