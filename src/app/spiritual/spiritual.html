@@ -7,9 +7,10 @@
     <a ui-sref="learn">ABOUT</a>
     <a ui-sref="ministries">MINISTRIES</a>
     <a ui-sref="facilities">WEDDINGS</a>
-    <a ui-sref="opportunities">SERVE</a>
+    <a ui-sref="events">EVENTS</a>
     <a ui-sref="give">GIVE</a>
-  </nav>
+	<p class='wtimes'>WORSHIP: SUNDAYS AT 10:00AM FELLOWSHIP: 11:00AM</p>
+	</nav>
 
   <section class='pagescontent'>
 		<div class='topimage'>
@@ -17,6 +18,14 @@
 		<div class='row'>
 			<section class='lefttext col-md-6 col-md-offset-1'>
 				<h2>Spiritual Life</h2>
+	
+				<!--talking to tumblr -->
+				<h3 id='upcoming'>Upcoming Meetings</h3>
+				<div data-ng-repeat='post in spiritual.posts'>
+						<p data-ng-bind='post.title'></p>	
+						<p data-ng-bind='post.body'></p>
+						<a ng-href='{{post.post_url}}' target='_blank'>View this post on our tumblr page</a>
+				</div>
 				<h3 id='spirituallife'>Spiritual Life Teams</h3>
 				<h4>CURRENTLY THERE ARE FOUR SPIRITUAL LIFE TEAMS AT CBCC
 				</h4>
@@ -70,3 +79,32 @@
 		</div>
   </section>
 </div>
+  <footer>
+  <p class='statement col-md-10 col-md-offset-1'>This Sanctuary is a Safe Place for all People to Worship, Regardless of Race, Creed, Gender, Cultural
+  Background or Sexual Orientation.</p>
+  <div class='row linksandlogo'>
+		<div class='col-md-offset-3 col-sm-offset-1 col-xs-offset-1 col-md-1 col-sm-2 col-xs-3'>
+				<a href='http://www.ucc.org/' target='_blank' alt='UCC home page'>
+					<img class='img-responsive' src='assets/images/ucclogo.gif' alt='UCC logo'>
+				</a>
+		</div>
+		<div class='footlinkcontainer col-md-7'>
+				<div class='col-md-10 col-xs-8 locinfo row'>
+						<span>
+						Cocoa Beach Community Church, 126 South Atlantic Avenue, Cocoa Beach, FL  32931 
+						</span>
+						<span>
+						(321) 783-3961
+						</span>
+		</div>
+		<div class='row'>
+		<div class='col-md-10 col-sm-8 footlinks'>
+				<a ui-sref='home'>Home</a>
+				<a ui-sref='learn'>Learn More</a>
+				<a ui-sref='ministries'>Ministries</a>
+				<a class='hidden-xs' ui-sref='facilities'>Facilities</a>
+				<a class='hidden-xs' ui-sref='spiritual'>Spiritual Life</a>
+		</div><!--footlinkcontainer-->
+		</div>
+	</div><!--row-->
+  </footer>
