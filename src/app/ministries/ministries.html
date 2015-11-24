@@ -66,21 +66,13 @@
 						<a ng-href='{{post.post_url}}' target='_blank'>Click here to view this post on our blog</a>
 				</div>
 				<h4 id='centerfor'>
-				CENTER FOR SPIRITUAL ENRICHMENT
-				</h4>
-				<h5>
-				Thursdays 12:00 PM to 2:00 PM
-				</h5>
-				<h5>
-				12:00 PM LUNCH $3.00 / 12:30 PM – 2:00 PM PROGRAM 
-				</h5>
-				<h5>
-				Facilitated by Cindy Johnson and Coleman Todd
-				</h5>
-				<p>
-				The CSE gathers throughout the year for book studies, video presentations and discussions on various topics on progressive religion and spiritual interest. 
-				</p>
-				<p>------BLOG INSERTION-------</p>
+				CENTER FOR SPIRITUAL ENRICHMENT</h4>
+				<div data-ng-repeat='post in ministries.CSEs'>
+						<h5 data-ng-bind='post.title'></h5>	
+						<p data-ng-bind='post.body'></p>
+						<a ng-href='{{post.post_url}}' target='_blank'>Click here to view this post on our blog</a>
+				</div>
+				<p></p>
 				<p>Contact Coleman Todd at <a href='mailto:coleman@cbcc-ucc.org'>coleman@cbcc-ucc.org</a></p>
 				<h3 id='mission'>MISSION</h3>
 				<p>“Let us not love with words or speech but with actions and in truth.”
